@@ -562,3 +562,74 @@ nav {
         font-size: 16px;
     }
 }
+/* Responsividade do Footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .footer__container h3 {
+        font-size: 1.25rem;
+    }
+
+    .footer__container ul li {
+        font-size: 0.875rem;
+    }
+
+    .footer__container ul li a {
+        font-size: 0.875rem;
+    }
+
+    .footer__contact ul li,
+    .footer__socials ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__contact ul li i,
+    .footer__socials ul li a i {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer__socials ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__container h3 {
+        font-size: 1rem;
+    }
+
+    .footer__container p {
+        font-size: 0.875rem;
+    }
+
+    .footer__container ul li {
+        font-size: 0.75rem;
+    }
+
+    .footer__container ul li a {
+        font-size: 0.75rem;
+    }
+
+    .footer__socials ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__socials ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer__bottom {
+        font-size: 0.75rem;
+    }
+}
